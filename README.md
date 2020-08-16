@@ -11,7 +11,7 @@ The database is like below.
 
 How to use:
 1. Start Tomcat
-2. Input localhost:8080/list.jsp in the browser.
+2. Input localhost:8080/list.action in the browser.
 Then It will list all the users.
 
 

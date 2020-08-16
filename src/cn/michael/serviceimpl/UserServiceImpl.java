@@ -3,7 +3,6 @@ package cn.michael.serviceimpl;
 import cn.michael.dao.UserDao;
 import cn.michael.entity.User;
 import cn.michael.service.UserService;
-import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

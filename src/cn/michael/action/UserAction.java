@@ -23,6 +23,18 @@ public class UserAction {
         return "success";
     }
 
+    @Test
+    public void test(){
+        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserService userService = (UserService) context.getBean("userService");
+        UserAction userAction = new UserAction();
+        userAction.setUserService(userService);
+        userAction.list();
+        System.out.println(userAction.list);
+
+    }
+
+
     public void setList(List<User> list) {
         this.list = list;
     }

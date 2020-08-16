@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="JAVA_MODULE" version="4">
   <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="ApplicationContext" removed="false">
+          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
     <facet type="web" name="Web">
       <configuration>
         <descriptors>
@@ -9,23 +16,6 @@
         <webroots>
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
-      </configuration>
-      <facet type="Struts2" name="Struts 2">
-        <configuration>
-          <fileset id="s2fileset" name="Default File Set" removed="false">
-            <file>file://$MODULE_DIR$/src/struts.xml</file>
-            <file>file://$MODULE_DIR$/src/config/struts/user.xml</file>
-            <file>jar://$MODULE_DIR$/web/WEB-INF/lib/struts2-core-2.5.22.jar!/struts-default.xml</file>
-          </fileset>
-          <propertiesKeys disabled="false" />
-        </configuration>
-      </facet>
-    </facet>
-    <facet type="Spring" name="Spring">
-      <configuration>
-        <fileset id="fileset" name="ApplicationContext" removed="false">
-          <file>file://$MODULE_DIR$/src/applicationContext.xml</file>
-        </fileset>
       </configuration>
     </facet>
   </component>
@@ -36,11 +26,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="commons-fileupload-1.4" level="project" />
-    <orderEntry type="library" name="aspectjweaver-1.6.8" level="project" />
-    <orderEntry type="library" name="asm-7.1" level="project" />
-    <orderEntry type="library" name="slf4j-api-1.7.30" level="project" />
-    <orderEntry type="library" name="ognl-3.1.26" level="project" />
+    <orderEntry type="library" name="lib" level="project" />
     <orderEntry type="module-library">
       <library name="JUnit4">
         <CLASSES>
