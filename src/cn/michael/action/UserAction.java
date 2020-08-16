@@ -3,19 +3,25 @@ package cn.michael.action;
 import cn.michael.entity.User;
 import cn.michael.service.UserService;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.Scope;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.stereotype.Controller;
 
 import java.util.List;
 
+@Controller("userAction")
+@Scope("prototype")
 public class UserAction {
+
     private List<User> list;
+    @Autowired
+    private UserService userService;
 
     public UserService getUserService() {
         return userService;
     }
-
-    private UserService userService;
 
     public String list(){
         list = userService.getAll();
